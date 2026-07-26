@@ -32,7 +32,9 @@ It should appear under the first variant "debug". Add it to your firebase androi
 
 4. Follow firebase configuration and change build.gradle files as required.
 
-5. Configure your android and ios simulators and then run the project with:
+5. Copy `.env.example` to `.env` and fill in your Firebase project's values. Download your own `google-services.json` and `GoogleService-Info.plist` from the Firebase console and place them at the project root (referenced in `app.json`) - these files are gitignored and must never be committed.
+
+6. Configure your android and ios simulators and then run the project with:
 
 ```bash
   npx expo run:android
